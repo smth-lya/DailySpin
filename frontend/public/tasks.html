@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">Back</a>
+    </header>
+    <main>
+    <section class="tasks">
+        <h1>My Tasks</h1>
+        <div class="task-input">
+            <input type="text" id="new-task" placeholder="Enter new task">
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        <ul class="task-list">
+            <li class="task-item">
+                <div class="task-content">
+                    <input type="checkbox" id="task-1">
+                    <label for="task-1">Complete the project</label>
+                    <progress class="task-progress" value="50" max="100"></progress>
+                </div>
+                <div class="task-reward">+10 XP</div>
+            </li>
+            <li class="task-item">
+                <div class="task-content">
+                    <input type="checkbox" id="task-2">
+                    <label for="task-2">Read a book</label>
+                    <progress class="task-progress" value="20" max="100"></progress>
+                </div>
+                <div class="task-reward">+5 XP</div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="missions">
+        <h2>Daily Missions</h2>
+        <div class="mission-grid">
+            <div class="mission-card">
+                <h3>Complete 3 Tasks</h3>
+                <progress value="1" max="3"></progress>
+                <p>Reward: 20 XP</p>
+            </div>
+            <div class="mission-card">
+                <h3>Spin the Wheel</h3>
+                <progress value="0" max="1"></progress>
+                <p>Reward: Bonus Item</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Wheel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script defer src="js/fortune.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-btn">Back</a>
+    </header>
+    <main>
+    <h1>Spin the Fortune Wheel!</h1>
+    <div class="wheel-container">
+        <div class="wheel">
+            <!-- Секции на колесе -->
+            <div class="reward-section">+50 XP</div>
+            <div class="reward-section">Bonus Item</div>
+            <div class="reward-section">+100 XP</div>
+            <div class="reward-section">Extra Spin</div>
+        </div>
+        <button id="spin-btn">Spin!</button>
+    </div>
+
+    <section class="recent-rewards">
+        <h2>Recent Rewards</h2>
+        <ul>
+            <li>+50 XP</li>
+            <li>Golden Key</li>
+        </ul>
+    </section>
+    </main>
+
+    <div id="reward-popup" class="hidden">
+        <div class="popup-content">
+            <h2>Congratulations!</h2>
+            <p>You won <span id="reward-text"></span>!</p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+
+</body>
+</html>

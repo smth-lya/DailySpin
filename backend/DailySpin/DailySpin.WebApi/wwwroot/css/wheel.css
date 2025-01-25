@@ -1,0 +1,45 @@
+﻿/* wheel.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#fortune-wheel {
+    text-align: center;
+}
+
+#spinButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    #spinButton:hover {
+        background-color: #218838;
+    }
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+    .back-link:hover {
+        text-decoration: underline;
+    }

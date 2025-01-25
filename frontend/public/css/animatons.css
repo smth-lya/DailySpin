@@ -1,0 +1,140 @@
+/* Основные анимации */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
+/* Применение анимаций */
+
+/* Фаде-ин для появления элементов */
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Увеличение масштаба */
+.scale-up {
+    animation: scaleUp 0.4s ease forwards;
+}
+
+/* Слайд с левой стороны */
+.slide-in-left {
+    animation: slideInFromLeft 0.6s ease-out forwards;
+}
+
+/* Слайд с правой стороны */
+.slide-in-right {
+    animation: slideInFromRight 0.6s ease-out forwards;
+}
+
+/* Для вращения */
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Для вспышек и акцентов */
+.pulse {
+    animation: pulse 1s infinite;
+}
+
+/* Легкая тряска для выделения */
+.wiggle {
+    animation: wiggle 0.6s ease infinite;
+}
+
+/* Анимации для интерактивных элементов */
+
+/* Кнопки при наведении */
+button:hover {
+    animation: pulse 0.5s infinite;
+    background-color: #ffdd57;
+}
+
+/* Колесо фортуны */
+.wheel.spin-active {
+    animation: spin 4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+/* Popup при показе */
+.popup-content {
+    animation: scaleUp 0.5s ease forwards;
+}
+
+/* Миссии и карточки */
+.mission-card {
+    animation: fadeIn 0.8s ease;
+}
+
+/* Прогресс-бары с увеличением */
+.task-progress {
+    animation: scaleUp 0.6s ease-out;
+}

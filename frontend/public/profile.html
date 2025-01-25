@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой профиль</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="../index.html" class="back-btn">Назад</a>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="profile-header">
+            <img src="../images/user-avatar.png" alt="User Avatar" class="avatar">
+            <div class="profile-info">
+                <h1>John Doe</h1>
+                <p>Уровень: <span class="user-level">5</span></p>
+                <p>XP: <span class="user-xp">1200</span>/1500</p>
+                <progress class="xp-bar" value="1200" max="1500"></progress>
+            </div>
+        </section>
+        
+        <section class="achievements">
+            <h2>Достижения</h2>
+            <div class="achievement-grid">
+                <div class="achievement-card">
+                    <img src="../images/achievements/achievement1.png" alt="Achievement 1">
+                    <p>Мастер задач</p>
+                </div>
+                <div class="achievement-card">
+                    <img src="../images/achievements/achievement2.png" alt="Achievement 2">
+                    <p>Странник фортуны</p>
+                </div>
+                <div class="achievement-card">
+                    <img src="../images/achievements/achievement3.png" alt="Achievement 3">
+                    <p>Царь постоянства</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-statistics">
+            <h2>Статистика</h2>
+            <div class="statistics-grid">
+                <div class="stat-card">
+                    <h3>Задачи выполнены</h3>
+                    <p>45</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Текущая streak</h3>
+                    <p>7 дней</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Всего XP</h3>
+                    <p>2200</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Достижения</h3>
+                    <p>12/20</p>
+                </div>
+            </div>
+        </section>
+        <section class="profile-settings">
+            <h2>Profile Settings</h2>
+            <div class="settings-grid">
+                <div class="setting-item">
+                    <label for="user-name">Change Name:</label>
+                    <input type="text" id="user-name" placeholder="Enter new name">
+                </div>
+                <div class="setting-item">
+                    <label for="user-avatar">Change Avatar:</label>
+                    <input type="file" id="user-avatar" accept="image/*">
+                </div>
+                <button id="save-settings-btn">Save Changes</button>
+            </div>
+        </section>
+        <section class="wheel-settings">
+            <h2>Wheel of Fortune Settings</h2>
+            <div class="settings-grid">
+                <div class="setting-item">
+                    <label for="wheel-theme">Wheel Theme:</label>
+                    <select id="wheel-theme">
+                        <option value="classic">Classic</option>
+                        <option value="dark">Dark</option>
+                        <option value="neon">Neon</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label for="reward-options">Customize Rewards:</label>
+                    <textarea id="reward-options" placeholder="Enter rewards, separated by commas"></textarea>
+                </div>
+                <button id="apply-wheel-settings">Apply Settings</button>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+</html>

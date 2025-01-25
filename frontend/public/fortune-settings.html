@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки колеса фортуны</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="../index.html" class="back-btn">Назад</a>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Настройки колеса фортуны</h2>
+        <form class="fortune-settings-form">
+            <label>
+                Максимум задач в день:
+                <input type="number" value="5" min="1">
+            </label>
+            <label>
+                Включать завершенные задачи:
+                <input type="checkbox" checked>
+            </label>
+            <label>
+                Минимальный приоритет:
+                <select>
+                    <option value="1">Высокий</option>
+                    <option value="2">Средний</option>
+                    <option value="3">Низкий</option>
+                </select>
+            </label>
+            <label>
+                Максимальная сложность:
+                <select>
+                    <option value="1">Высокая</option>
+                    <option value="2">Средняя</option>
+                    <option value="3">Низкая</option>
+                </select>
+            </label>
+            <button type="submit">Сохранить</button>
+        </form>
+    </main>
+</body>
+</html>

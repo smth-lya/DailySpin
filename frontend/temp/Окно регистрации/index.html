@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form id="registration-form" class="form">
+            <h1 class="form-title">Create Account</h1>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <ul id="email-hints" class="hints">
+                    <li data-valid="false">Contains @ symbol</li>
+                    <li data-valid="false">Valid domain</li>
+                </ul>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+                <ul id="password-hints" class="hints">
+                    <li data-valid="false">At least 8 characters</li>
+                    <li data-valid="false">Contains uppercase letter</li>
+                    <li data-valid="false">Contains number</li>
+                    <li data-valid="false">Contains special character</li>
+                </ul>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

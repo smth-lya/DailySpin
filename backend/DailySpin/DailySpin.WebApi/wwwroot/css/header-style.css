@@ -1,0 +1,76 @@
+﻿.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    z-index: 1000;
+}
+main {
+    margin-top: 30px; 
+    padding: 20px;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    margin-right: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+    .nav-item:hover {
+        color: #4CAF50;
+        transform: translateY(-2px);
+    }
+
+    .nav-item i {
+        margin-right: 8px;
+        font-size: 20px;
+    }
+
+/* Иконки */
+/*.icon-wheel:before {
+    content: "\f148";
+    font-family: 'FontAwesome';
+}
+
+.icon-tasks:before {
+    content: "\f148";
+    font-family: 'FontAwesome';
+}
+
+.icon-pdf:before {
+    content: "\f1c1";
+    font-family: 'FontAwesome';
+}
+
+.icon-profile:before {
+    content: "\f007";
+    font-family: 'FontAwesome';
+}*/
