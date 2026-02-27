@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using DailySpin.Application;
+using DailySpin.Framework;
 
 namespace DailySpin.WebApi;
 

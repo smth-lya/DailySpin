@@ -1,5 +1,6 @@
 ﻿using DailySpin.Application;
 using System.Diagnostics.CodeAnalysis;
+using DailySpin.Framework;
 
 namespace DailySpin.WebApi;
 

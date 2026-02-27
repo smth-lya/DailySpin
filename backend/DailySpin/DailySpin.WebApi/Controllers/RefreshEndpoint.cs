@@ -1,5 +1,6 @@
 ﻿using DailySpin.Application;
 using DailySpin.Domain;
+using DailySpin.Framework;
 using static DailySpin.WebApi.SignInEndpoint;
 
 namespace DailySpin.WebApi;

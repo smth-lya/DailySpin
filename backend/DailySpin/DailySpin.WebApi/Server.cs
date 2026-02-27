@@ -1,5 +1,5 @@
-﻿using DailySpin.Application;
-using System.Net;
+﻿using System.Net;
+using DailySpin.Framework;
 
 namespace DailySpin.WebApi;
 

@@ -1,5 +1,6 @@
 ﻿using DailySpin.Application;
 using DailySpin.Domain;
+using DailySpin.Framework;
 using DailySpin.WebApi;
 
 public class WheelController : IController

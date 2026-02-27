@@ -2,6 +2,7 @@
 using FluentValidation;
 using DailySpin.Application;
 using DailySpin.Domain;
+using DailySpin.Framework;
 
 namespace DailySpin.WebApi;
 

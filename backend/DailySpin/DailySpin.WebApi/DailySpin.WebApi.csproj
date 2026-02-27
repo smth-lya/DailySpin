@@ -16,6 +16,7 @@
 		<ProjectReference Include="..\DailySpin.Application\DailySpin.Application.csproj" />
 		<ProjectReference Include="..\DailySpin.DI\DailySpin.DI.csproj" />
 		<ProjectReference Include="..\DailySpin.Domain\DailySpin.Domain.csproj" />
+		<ProjectReference Include="..\DailySpin.Framework\DailySpin.Framework.csproj" />
 		<ProjectReference Include="..\DailySpin.Infrastructure\DailySpin.Infrastructure.csproj" />
 	</ItemGroup>
 
@@ -29,10 +30,6 @@
 		<None Update="Views\**\*">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
-	</ItemGroup>
-	
-	<ItemGroup>
-	  <Folder Include="Models\" />
 	</ItemGroup>	
 	
 </Project>
